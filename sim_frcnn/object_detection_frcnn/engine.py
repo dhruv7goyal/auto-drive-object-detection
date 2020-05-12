@@ -58,8 +58,8 @@ def train(model_cnn, model, optimizer, data_loader, device, epoch, save):
 
     if save and (epoch % 10) == 0:
         print("Saving Model for epoch: "+str(epoch))
-        torch.save(model_cnn.state_dict(), os.path.join(save, 'epoch-{}.pth'.format(epoch)))
-        torch.save(model.state_dict(), os.path.join(save, 'epoch-{}.pth'.format(epoch)))
+        torch.save(model_cnn.state_dict(), os.path.join(save,"/cnn", 'epoch-{}.pth'.format(epoch)))
+        torch.save(model.state_dict(), os.path.join(save, "/frcnn" , 'epoch-{}.pth'.format(epoch)))
 
 
 def test(model_cnn, model, data_loader, device,epoch):
