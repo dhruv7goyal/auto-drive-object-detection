@@ -2,6 +2,9 @@
 
 For object detection task, ResNet-34 backbone based FasterRCNN was trained with input from CombineAndUpSamplenetwork. CombineAndUpSample network and ResNet-34used for this task both initialized their weights from the net-work weights obtained from PIRL based pre-text training.
 
+![alt text]( self-drive/object_detection_frcnn/Combine_Upsample.png "PIRL block diagram")
+
+
 
 `data_helper.py` - Utility for Data parsing and loading for bounding box prediction.
 `helper.py` - Helper for data-helper.py
